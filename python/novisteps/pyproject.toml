@@ -1,0 +1,22 @@
+[tool.ruff]
+line-length = 100
+lint.select = ["ALL"]
+lint.ignore = [
+    "D",
+    "PLR0913",
+    "ANN002",
+    "ANN003",
+    "ANN101",
+    "COM812",
+    "ISC001",
+    "T201"
+]
+target-version = "py311"
+
+[tool.ruff.format]
+quote-style = "double"
+line-ending = "auto"
+indent-style = "space"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
